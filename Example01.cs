@@ -8,6 +8,10 @@ namespace Strategy
 
     class PetrolMove : IMovable
     {
+        public PetrolMove()
+        {
+        }
+
         public void Move()
         {
             Console.WriteLine("Перемещение на бензине");
@@ -42,9 +46,9 @@ namespace Strategy
         }
     }
 
-    class Program
+    class Program1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Car auto = new Car(4, "Volvo", new PetrolMove());
             auto.Move();
