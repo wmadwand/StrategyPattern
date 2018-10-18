@@ -24,6 +24,8 @@ namespace StrategyMS01
 
     public class Car
     {
+        public IMoveable Moveable { private get; set; }
+
         protected int _passengersCount;
         protected string _model;
 
@@ -33,8 +35,6 @@ namespace StrategyMS01
             _model = model;
             Moveable = moveable;
         }
-
-        public IMoveable Moveable { private get; set; }
 
         public void Move()
         {
